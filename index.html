@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="body">
+    <div class="flex">
+      <!-- <button class="btn-switch"><a href="../index.html">Go to Stopwatch</a></button> -->
+      <h1 class="heading">Timer</h1>
+
+      <div class="flexed">
+        <div>
+          <input
+            type="number"
+            id="timerInpHour"
+            class="timerInpHour timerInp"
+            placeholder="0"
+            min="0"
+            max="24"
+          />
+          <p>Hr</p>
+        </div>
+        <div>
+          <input
+            type="number"
+            id="timerInpMin"
+            class="timerInpMin timerInp"
+            placeholder="0"
+            min="0"
+            max="60"
+            step="5"
+          />
+          <p>M</p>
+        </div>
+        <div>
+          <input
+            type="number"
+            id="timerInpSec"
+            class="timerInpSec timerInp"
+            placeholder="0"
+            min="0"
+            max="60"
+            step="5"
+          />
+          <p>S</p>
+        </div>
+      </div>
+
+      <button onclick="start();" class="btn-display btn" id="btn-start">
+        Start
+      </button>
+      <button onclick="stop();" class="btn hidden" id="btn-stop">Stop</button>
+      <button onclick="restart();" class="btn hidden" id="btn-restart">
+        Restart
+      </button>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
