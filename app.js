@@ -34,6 +34,10 @@ document.getElementById("timerInpSec").disabled = true;
     if (s === 0 && m === 0 && hr === 0) {
         alert("hey! input a value");
         stop();
+        
+    document.getElementById("timerInpHour").disabled = false;
+    document.getElementById("timerInpMin").disabled = false;
+    document.getElementById("timerInpSec").disabled = false;
     }
 else{
     
@@ -42,6 +46,10 @@ else{
         hr >= 24){
             
             alert('Invalid Input');
+            
+    document.getElementById("timerInpHour").disabled = false;
+    document.getElementById("timerInpMin").disabled = false;
+    document.getElementById("timerInpSec").disabled = false;
             
         }
         else{
